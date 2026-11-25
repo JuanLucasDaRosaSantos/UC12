@@ -1,0 +1,11 @@
+MODELO LÓGICO INICIAL (TABELAS PRELIMINARES) 
+
+Conversão inicial das entidades em tabelas estruturadas (nesta etapa, as chaves primárias e estrangeiras ainda não são formalmente aplicadas em código DDL): 
+CLIENTE (id_cliente, nome_cliente, cpf_cnpj, email, telefone_contato, data_registro) 
+VENDEDOR (id_vendedor, nome_vendedor, email, telefone, data_admissao) 
+FORNECEDOR (id_fornecedor, razao_social, nome_fantasia, cnpj_fornecedor, telefone_comercial, email_contato) 
+CATEGORIA (id_categoria, nome_categoria, descricao_categoria) 
+PRODUTO (id_produto, nome_produto, descricao_prod, preco_unitario, saldo_estoque, id_categoria, id_fornecedor) 
+PEDIDO (id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor) 
+ITEM_PEDIDO (id_item_pedido, id_pedido, id_produto, quantidade_item, preco_aplicado) 
+PAGAMENTO (id_pagamento, data_pagamento, valor_pago, forma_pagamento, status_pagamento, id_pedido)

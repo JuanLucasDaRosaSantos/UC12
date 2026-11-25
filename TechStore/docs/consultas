@@ -1,0 +1,57 @@
+1. select * from pedido 
+ 
+2. select * from categoria 
+
+3. select * from pagamento 
+ 
+4. select * from cliente 
+ 
+5. select categoria.nome_categoria, produto.nome_produto from categoria inner join produto on produto.id_categoria=categoria.id_categoria 
+ 
+6. select vendedor.nome_vendedor, pedido.valor_total from vendedor inner join pedido on vendedor.id_vendedor = pedido.id_vendedor inner join item_pedido on item_pedido.id_pedido = pedido.id_pedido 
+ 
+7. SELECT 
+    p.nome_produto, 
+    SUM(ip.quantidade_item) AS mais_vendido 
+FROM pedido ped 
+INNER JOIN item_pedido ip 
+    ON ped.id_pedido = ip.id_pedido 
+INNER JOIN produto p 
+    ON ip.id_produto = p.id_produto 
+WHERE ped.status_pedido IN ('FATURADO', 'PAGO') 
+GROUP BY p.id_produto, p.nome_produto 
+ORDER BY mais vendido DESC; 
+ 
+8. SELECT 
+    c.id_cliente, 
+    c.nome_cliente, 
+    COUNT(p.id_pedido) AS quantidade_compras 
+FROM cliente c 
+INNER JOIN pedido p 
+    ON c.id_cliente = p.id_cliente 
+WHERE p.status_pedido IN ('FATURADO', 'PAGO') 
+GROUP BY 
+    c.id_cliente, 
+    c.nome_cliente 
+ORDER BY 
+    quantidade compras DESC; 
+ 
+9. SELECT * 
+FROM produto 
+WHERE saldo_estoque < 20 
+ 
+10. SELECT nome_produto, preco_unitario 
+FROM produto 
+ORDER BY preco_unitario DESC 
+ 
+11. SELECT * 
+FROM pedido 
+WHERE status_pedido IN ('Pago', 'FATURADO'); 
+ 
+12. SELECT * 
+FROM pedido 
+WHERE data_emissao BETWEEN '2026-10-01' AND '2026-10-15'; 
+ 
+13. SELECT * 
+FROM fornecedor 
+WHERE email_contato IS NULL;; 

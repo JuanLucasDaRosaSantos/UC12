@@ -1,0 +1,162 @@
+-- perfil
+CREATE TABLE perfil (
+    id_perfil BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL UNIQUE,
+    descricao VARCHAR(255),
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- permissao
+CREATE TABLE permissao (
+    id_permissao BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL UNIQUE,
+    descricao VARCHAR(255),
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- perfil permissão
+
+CREATE TABLE perfil_permissao (
+    id_perfil BIGINT NOT NULL,
+    id_permissao BIGINT NOT NULL,
+
+    PRIMARY KEY(id_perfil,id_permissao),
+
+    FOREIGN KEY (id_perfil)
+        REFERENCES perfil(id_perfil),
+
+    FOREIGN KEY (id_permissao)
+        REFERENCES permissao(id_permissao)
+);
+
+-- usuario_perfil
+
+CREATE TABLE usuario_perfil (
+    id_usuario BIGINT NOT NULL,
+    id_perfil BIGINT NOT NULL,
+
+    PRIMARY KEY(id_usuario,id_perfil),
+
+    FOREIGN KEY(id_usuario)
+        REFERENCES usuario(id_usuario),
+
+    FOREIGN KEY(id_perfil)
+        REFERENCES perfil(id_perfil)
+);
+
+-- usuário
+
+CREATE TABLE usuario (
+    id_usuario BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+
+    senha_hash VARCHAR(255) NOT NULL,
+
+    ultimo_login DATETIME,
+
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- arquivo 
+
+CREATE TABLE arquivo (
+    id_arquivo BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nome_original VARCHAR(255) NOT NULL,
+    nome_fisico VARCHAR(255) NOT NULL,
+
+    content_type VARCHAR(150),
+    tamanho BIGINT,
+
+    caminho VARCHAR(500),
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+--departamento 
+
+CREATE TABLE departamento (
+    id_departamento BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nome VARCHAR(100) NOT NULL UNIQUE,
+
+    ativo BOOLEAN DEFAULT TRUE,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+--colaborador 
+
+CREATE TABLE colaborador (
+
+    id_colaborador BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    id_usuario BIGINT NULL,
+
+    id_departamento BIGINT NOT NULL,
+
+    matricula VARCHAR(50) UNIQUE NOT NULL,
+
+    nome VARCHAR(150) NOT NULL,
+
+    cargo VARCHAR(150),
+
+    email_corporativo VARCHAR(255),
+
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    FOREIGN KEY(id_usuario)
+        REFERENCES usuario(id_usuario),
+
+    FOREIGN KEY(id_departamento)
+        REFERENCES departamento(id_departamento)
+);
+
+-- status certificação
+
+CREATE TABLE status_certificacao (
+
+    id_status_certificacao BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nome VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- curso 
+
+CREATE TABLE curso (
+
+    id_curso BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    id_provedor BIGINT NOT NULL,
+
+    nome VARCHAR(200) NOT NULL,
+
+    descricao TEXT,
+
+    carga_horaria INT,
+
+    url_curso VARCHAR(500),
+
+    certificado_disponivel BOOLEAN DEFAULT FALSE,
+
+    ativo BOOLEAN DEFAULT TRUE,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (id_provedor)
+        REFERENCES provedor(id_provedor)
+);

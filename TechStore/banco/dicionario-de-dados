@@ -1,0 +1,67 @@
+CLIENTES
+Campo	Descrição	Tipo	Obrigatório
+id_cliente	Código do cliente	INT	Sim
+nome_cliente	Nome do cliente	VARCHAR(150)	Sim
+cpf_cnpj	CPF ou CNPJ	CHAR(14)	Sim
+email	E-mail do cliente	VARCHAR(255)	Sim
+telefone_contato	Telefone para contato	CHAR(11)	Não
+data_registro	Data de cadastro	DATETIME	Sim
+PRODUTO
+Campo	Descrição	Tipo
+id_produto	Código do produto	INT
+nome_produto	Nome do produto	VARCHAR(150)
+descricao_prod	Descrição do produto	TEXT
+preco_unitario	Valor unitário	DECIMAL(12,2)
+saldo_estoque	Quantidade em estoque	INT
+id_categoria	Categoria vinculada	INT
+id_fornecedor	Fornecedor vinculado	INT
+VENDEDOR
+Campo	Descrição	Tipo	Obrigatório
+id_vendedor	Identificador único do vendedor	INT	Sim
+nome_vendedor	Nome completo do vendedor	VARCHAR(150)	Sim
+email	E-mail corporativo do vendedor	VARCHAR(255)	Sim
+telefone	Telefone do vendedor	CHAR(11)	Não
+FORNECEDOR
+Campo	Descrição	Tipo	Obrigatório
+id_fornecedor	Identificador único do fornecedor	INT	Sim
+razao_social	Razão social da empresa fornecedora	VARCHAR(200)	Sim
+nome_fantasia	Nome fantasia da empresa	VARCHAR(150)	Sim
+cnpj_fornecedor	CNPJ do fornecedor	CHAR(14)	Sim
+telefone_comercial	Telefone comercial	CHAR(11)	Não
+email_contato	E-mail de contato	VARCHAR(255)	Não
+CATEGORIA
+Campo	Descrição	Tipo	Obrigatório
+id_categoria	Identificador único da categoria	INT	Sim
+nome_categoria	Nome da categoria	VARCHAR(100)	Sim
+descricao_categoria	Descrição da categoria	VARCHAR(500)	Não
+PEDIDO
+Campo	Descrição	Tipo	Obrigatório
+id_pedido	Identificador único do pedido	INT	Sim
+data_emissao	Data de emissão do pedido	DATETIME	Sim
+valor_total	Valor total do pedido	DECIMAL(12,2)	Sim
+status_pedido	Situação atual do pedido	VARCHAR(30)	Sim
+id_cliente	Cliente responsável pelo pedido	INT	Sim
+id_vendedor	Vendedor responsável pelo pedido	INT	Sim
+ITEM_PEDIDO
+Campo	Descrição	Tipo	Obrigatório
+id_item_pedido	Identificador único do item	INT	Sim
+id_pedido	Pedido relacionado ao item	INT	Sim
+id_produto	Produto relacionado ao item	INT	Sim
+quantidade_item	Quantidade do produto no pedido	INT	Sim
+preco_aplicado	Preço unitário aplicado na venda	DECIMAL(12,2)	Sim
+PAGAMENTO
+Campo	Descrição	Tipo	Obrigatório
+id_pagamento	Identificador único do pagamento	INT	Sim
+data_pagamento	Data de realização do pagamento	DATETIME	Sim
+valor_pago	Valor pago pelo cliente	DECIMAL(12,2)	Sim
+forma_pagamento	Método utilizado para pagamento	VARCHAR(50)	Sim
+status_pagamento	Situação do pagamento	VARCHAR(30)	Sim
+id_pedido	Pedido associado ao pagamento	INT	Sim
+LEGENDAS
+Termo	Significado
+PK	Primary Key (Chave Primária)
+FK	Foreign Key (Chave Estrangeira)
+AUTO_INCREMENT	Valor gerado automaticamente pelo MySQL
+UNIQUE	Não permite valores duplicados
+NOT NULL	Campo obrigatório
+DEFAULT	Valor padrão atribuído automaticamente

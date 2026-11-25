@@ -1,0 +1,267 @@
+INSERT INTO produto(id_produto, nome_produto, descricao_prod, preco_unitario, saldo_estoque, id_categoria, id_fornecedor)
+VALUES
+(50, 'Samsung Galaxy S23', 'Smartphone 256GB', 3599.90, 22, 2, 1),
+(51, 'Samsung Galaxy S23 FE', 'Smartphone 128GB', 2799.90, 24, 2, 1),
+(52, 'Samsung Galaxy Z Fold6', 'Smartphone Dobrável 512GB', 11999.90, 5, 2, 1),
+(53, 'Samsung Galaxy A55', 'Smartphone Intermediário 256GB', 1999.90, 30, 2, 1),
+(54, 'Samsung Galaxy A35', 'Smartphone Intermediário 128GB', 1599.90, 35, 2, 1),
+(55, 'iPhone 15', 'Smartphone Apple 128GB', 5299.90, 18, 2, 5),
+(56, 'iPhone 15 Plus', 'Smartphone Apple 256GB', 6499.90, 16, 2, 5),
+(57, 'iPhone 15 Pro', 'Smartphone Apple 256GB', 8499.90, 10, 2, 5),
+(58, 'iPhone 15 Pro Max', 'Smartphone Apple 512GB', 9999.90, 8, 2, 5),
+(59, 'Motorola Edge 50 Pro', 'Smartphone 256GB 5G', 2799.90, 21, 2, 6),
+(60, 'Motorola Edge 50 Fusion', 'Smartphone 256GB', 2299.90, 19, 2, 6),
+(61, 'Moto G84', 'Smartphone 256GB', 1499.90, 27, 2, 6),
+(62, 'Moto G54', 'Smartphone 128GB', 1199.90, 32, 2, 6),
+(63, 'Motorola Razr 50', 'Smartphone Dobrável 256GB', 5499.90, 7, 2, 6),
+(64, 'Samsung Galaxy M55', 'Smartphone 256GB', 1899.90, 17, 2, 1),
+(65, 'iPhone SE', 'Smartphone Apple 128GB', 3299.90, 14, 2, 5),
+(66, 'Moto G24', 'Smartphone 128GB', 899.90, 28, 2, 6),
+(67, 'Samsung Galaxy S24 FE', 'Smartphone 256GB', 3799.90, 13, 2, 1);
+
+INSERT INTO produto(id_produto, nome_produto, descricao_prod, preco_unitario, saldo_estoque, id_categoria, id_fornecedor)
+VALUES
+
+-- NOTEBOOKS (34-48)
+(35, 'Notebook Dell XPS 13', 'Notebook Core Ultra 7 16GB SSD 512GB', 8499.90, 8, 1, 2),
+(36, 'Notebook Dell Latitude 5540', 'Notebook Core i5 16GB SSD 512GB', 5699.90, 12, 1, 2),
+(37, 'Notebook Dell G16', 'Notebook Gamer RTX 4060', 7299.90, 7, 1, 2),
+(38, 'Notebook Samsung Galaxy Book3 360', 'Notebook i7 16GB SSD 1TB', 6499.90, 10, 1, 1),
+(39, 'Notebook Samsung Galaxy Book4 Pro', 'Notebook Core Ultra 7 OLED', 8999.90, 5, 1, 1),
+(40, 'Notebook Asus VivoBook 15', 'Notebook Ryzen 7 16GB SSD 512GB', 4299.90, 14, 1, 4),
+(41, 'Notebook Asus Zenbook 14', 'Notebook OLED Ryzen 9', 7899.90, 6, 1, 4),
+(42, 'Notebook Asus TUF Gaming F15', 'Notebook Gamer RTX 4050', 6199.90, 9, 1, 4),
+(43, 'MacBook Air M2', 'Notebook Apple M2 8GB SSD 256GB', 7999.90, 8, 1, 5),
+(44, 'MacBook Air M3', 'Notebook Apple M3 16GB SSD 512GB', 10999.90, 5, 1, 5),
+(45, 'MacBook Pro M3', 'Notebook Apple M3 Pro 18GB', 15999.90, 3, 1, 5),
+(46, 'Notebook Dell Inspiron 14', 'Notebook Core i5 8GB SSD 256GB', 3899.90, 13, 1, 2),
+(47, 'Notebook Samsung Galaxy Book Go', 'Notebook Snapdragon 8GB', 2499.90, 16, 1, 1),
+(48, 'Notebook Asus ExpertBook', 'Notebook Corporativo Core i7', 5699.90, 11, 1, 4),
+(49, 'Notebook Dell Precision 3581', 'Notebook Workstation RTX A500', 12999.90, 4, 1, 2);
+
+INSERT INTO produto(id_produto, nome_produto, descricao_prod, preco_unitario, saldo_estoque, id_categoria, id_fornecedor)
+VALUES
+(68, 'Mouse Logitech MX Master 3S', 'Mouse sem fio premium', 599.90, 20, 3, 3),
+(69, 'Teclado Logitech G915', 'Teclado Gamer Mecânico', 1199.90, 12, 3, 3),
+(70, 'Webcam Logitech C920', 'Webcam Full HD', 399.90, 25, 3, 3),
+(71, 'Headset Logitech G733', 'Headset sem fio RGB', 1099.90, 14, 3, 3),
+(72, 'Mouse Logitech M170', 'Mouse sem fio', 89.90, 50, 3, 3),
+(73, 'Teclado Logitech K380', 'Teclado Bluetooth', 229.90, 32, 3, 3),
+(74, 'Mouse Gamer Logitech G305', 'Mouse sem fio LIGHTSPEED', 199.90, 27, 3, 3),
+(75, 'Headset Logitech G435', 'Headset Gamer Bluetooth', 449.90, 22, 3, 3),
+(76, 'Mouse ASUS ROG Gladius III', 'Mouse Gamer RGB', 349.90, 18, 3, 4),
+(77, 'Teclado ASUS ROG Strix Scope', 'Teclado Mecânico RGB', 699.90, 11, 3, 4),
+(78, 'Headset ASUS ROG Delta', 'Headset Gamer USB', 799.90, 9, 3, 4),
+(79, 'Mouse Pad Logitech G840', 'Mouse Pad Gamer XL', 189.90, 30, 3, 3),
+(80, 'Caixa de Som Logitech Z213', 'Sistema de áudio 2.1', 299.90, 16, 3, 3),
+(81, 'Volante Logitech G29', 'Volante para Simulação', 1899.90, 6, 3, 3),
+(82, 'Webcam Logitech Brio', 'Webcam 4K', 899.90, 12, 3, 3),
+(83, 'Microfone Logitech Blue Yeti', 'Microfone USB', 699.90, 13, 3, 3),
+(84, 'Teclado Logitech MX Keys Mini', 'Teclado compacto sem fio', 549.90, 17, 3, 3);
+
+
+insert into pedido (id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (1, '2022-11-11','19999.50','PAGO',7,3), //3 notebook dell inspiron 15
+(2, '2022-11-11','
+
+INSERT INTO pedido 
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (10, '2026/05/05', '47398.60', 'PAGO', 8, 5), --38,83,56,61,99,58,21,5,70,100,7,68,80,102
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (11, '2026/06/10', '47388.70', 'FATURADO', 5, 3), --29,28,20,81,80,48,56,3,82,79,57,24,89
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (12, '2026/11/27', '23139.20', 'PAGO', 8, 6), --
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (13, '2026/12/05', '', 'ABERTO', 1, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (14, '2026/08/26', '', 'ABERTO', 3, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (15, '2026/09/27', '', 'PENDENTE', 9, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (16, '2026/01/22', '', 'CANCELADO', 5, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (17, '2026/05/09', '', 'ABERTO', 2, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (18, '2026/02/05', '', 'CANCELADO', 4, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (19, '2026/01/07', '', 'PENDENTE', 3, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (20, '2026/05/17', '', 'PENDENTE', 1, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (21, '2026/03/11', '', 'PAGO', 7, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (22, '2026/07/23', '', 'PAGO', 8, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (23, '2026/10/03', '', 'PAGO', 1, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (24, '2026/02/26', '', 'PAGO', 3, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (25, '2026/01/19', '', 'CANCELADO', 10, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (26, '2026/01/12', '', 'ABERTO', 8, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (27, '2026/10/01', '', 'PENDENTE', 9, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (28, '2026/05/01', '', 'PENDENTE', 6, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (29, '2026/01/25', '', 'PAGO', 7, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (30, '2026/07/09', '', 'PENDENTE', 8, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (31, '2026/06/20', '', 'ABERTO', 3, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (32, '2026/12/31', '', 'FATURADO', 6, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (33, '2026/06/07', '', 'PENDENTE', 1, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (34, '2026/12/30', '', 'FATURADO', 9, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (35, '2026/03/29', '', 'PENDENTE', 6, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (36, '2026/12/23', '', 'PAGO', 10, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (37, '2026/05/27', '', 'ABERTO', 1, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (38, '2026/08/05', '', 'FATURADO', 10, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (39, '2026/07/30', '', 'PENDENTE', 6, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (40, '2026/05/18', '', 'FATURADO', 2, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (41, '2026/02/13', '', 'PAGO', 1, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (42, '2026/04/25', '', 'PENDENTE', 7, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (43, '2026/04/08', '', 'FATURADO', 4, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (44, '2026/03/25', '', 'CANCELADO', 1, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (45, '2026/06/06', '', 'ABERTO', 7, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (46, '2026/10/04', '', 'FATURADO', 4, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (47, '2026/06/06', '', 'CANCELADO', 2, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (48, '2026/11/25', '', 'ABERTO', 5, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (49, '2026/01/01', '', 'FATURADO', 1, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (50, '2026/09/03', '', 'PENDENTE', 4, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (51, '2026/09/10', '', 'PAGO', 7, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (52, '2026/01/25', '', 'ABERTO', 6, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (53, '2026/07/06', '', 'CANCELADO', 5, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (54, '2026/03/22', '', 'PENDENTE', 8, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (55, '2026/11/14', '', 'PAGO', 6, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (56, '2026/09/01', '', 'PAGO', 10, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (57, '2026/06/25', '', 'FATURADO', 9, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (58, '2026/07/27', '', 'FATURADO', 9, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (59, '2026/12/05', '', 'CANCELADO', 4, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (60, '2026/04/13', '', 'CANCELADO', 7, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (61, '2026/06/03', '', 'ABERTO', 6, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (62, '2026/01/07', '', 'ABERTO', 3, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (63, '2026/12/07', '', 'PAGO', 4, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (64, '2026/08/24', '', 'CANCELADO', 2, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (65, '2026/11/13', '', 'PAGO', 9, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (66, '2026/06/23', '', 'CANCELADO', 3, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (67, '2026/08/04', '', 'PENDENTE', 4, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (68, '2026/04/18', '', 'CANCELADO', 5, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (69, '2026/07/09', '', 'PAGO', 7, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (70, '2026/11/16', '', 'PAGO', 4, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (71, '2026/05/21', '', 'PENDENTE', 4, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (72, '2026/06/22', '', 'ABERTO', 5, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (73, '2026/12/27', '', 'PENDENTE', 4, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (74, '2026/12/24', '', 'CANCELADO', 8, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (75, '2026/09/16', '', 'PAGO', 1, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (76, '2026/02/15', '', 'PAGO', 3, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (77, '2026/03/13', '', 'FATURADO', 8, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (78, '2026/09/04', '', 'FATURADO', 3, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (79, '2026/09/19', '', 'FATURADO', 7, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (80, '2026/04/17', '', 'FATURADO', 8, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (81, '2026/08/21', '', 'FATURADO', 10, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (82, '2026/08/02', '', 'ABERTO', 10, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (83, '2026/08/21', '', 'ABERTO', 1, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (84, '2026/11/30', '', 'PENDENTE', 3, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (85, '2026/12/30', '', 'PAGO', 10, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (86, '2026/09/14', '', 'FATURADO', 9, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (87, '2026/05/19', '', 'FATURADO', 1, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (88, '2026/05/30', '', 'CANCELADO', 4, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (89, '2026/11/18', '', 'PENDENTE', 7, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (90, '2026/04/22', '', 'CANCELADO', 7, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (91, '2026/06/24', '', 'ABERTO', 8, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (92, '2026/05/17', '', 'PAGO', 2, 5),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (93, '2026/12/12', '', 'PENDENTE', 9, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (94, '2026/09/10', '', 'CANCELADO', 1, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (95, '2026/07/29', '', 'FATURADO', 3, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (96, '2026/08/24', '', 'CANCELADO', 9, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (97, '2026/09/21', '', 'ABERTO', 7, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (98, '2026/06/12', '', 'PENDENTE', 1, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (99, '2026/02/04', '', 'CANCELADO', 7, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (100, '2026/05/19', '', 'ABERTO', 8, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (101, '2026/05/17', '', 'ABERTO', 3, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (102, '2026/02/18', '', 'CANCELADO', 5, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (103, '2026/04/28', '', 'PAGO', 8, 6),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (104, '2026/01/25', '', 'FATURADO', 7, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (105, '2026/08/05', '', 'ABERTO', 10, 3),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (106, '2026/11/04', '', 'FATURADO', 10, 4),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (107, '2026/06/13', '', 'PENDENTE', 1, 1),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (108, '2026/08/30', '', 'PAGO', 9, 2),
+(id_pedido, data_emissao, valor_total, status_pedido, id_cliente, id_vendedor)
+values (109, '2026/11/17', '', 'ABERTO', 7, 6),
