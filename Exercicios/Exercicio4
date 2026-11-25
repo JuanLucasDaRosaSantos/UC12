@@ -1,0 +1,3 @@
+A classe é o public class Main {}
+O método é o  public static void main(String[] args) {}
+O system.out.println é o System.out.println("Olá UC12");
