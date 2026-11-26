@@ -6,5 +6,5 @@ public class Exercicio5 {
         System.out.println("Curso:");
         System.out.println("Turma:");
     }
-
+ 
 }

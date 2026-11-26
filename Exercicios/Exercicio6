@@ -1,0 +1,12 @@
+public class Exercicio6 {
+
+    public static void main(String[] args) {
+        String nome, cidade; 
+        int telefone, idade;
+    system.out.println("Nome:" + nome);
+    system.out.println("Cidade:" + cidade);
+    system.out.println("Telefone:" + telefone);
+    system.out.println("Idade:" + idade);
+    }
+ 
+}
